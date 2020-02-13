@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Styled } from "theme-ui"
+import { jsx, Box } from "theme-ui"
 import { graphql } from "gatsby"
 import GatsbyImg from "../GatsbyImage"
 

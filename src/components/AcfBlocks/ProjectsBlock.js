@@ -1,7 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled, Container } from "theme-ui"
-import { Box, Flex } from "@theme-ui/components"
-import { Separator } from "../ui-components"
+import { jsx, Box, Flex } from "theme-ui"
 import Project from "./ProjectItem"
 import { graphql } from "gatsby"
 
@@ -30,14 +28,14 @@ export const ProjectsBlock = ({ content, title, subtitle, projects }) => {
   return (
     <Box sx={{ my: 10 }}>
       <Box sx={{ textAlign: `center` }}>
-        <Styled.h3
+        <h3
           dangerouslySetInnerHTML={{ __html: title }}
           sx={{
             variant: `text.heading`,
           }}
         />
 
-        <Styled.h4
+        <h4
           dangerouslySetInnerHTML={{ __html: subtitle }}
           sx={{ textAlign: `center`, mb: 40 }}
         />

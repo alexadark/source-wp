@@ -16,7 +16,7 @@ const Pagination = ({ pageNumber, hasNextPage, allPosts, itemsPerPage }) => (
       {Array.from({ length: allPosts.length / itemsPerPage }, (_, i) => (
         <Link
           key={`pagination-number${i + 1}`}
-          to={i === 0 ? `blog/` : `blog/${i + 1}`}
+          to={i === 0 ? `/` : `blog/${i + 1}`}
         >
           {i + 1}
         </Link>

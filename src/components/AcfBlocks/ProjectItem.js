@@ -1,13 +1,10 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
-import { Image, Box, Flex } from "@theme-ui/components"
-
+import { jsx, Box, Flex } from "theme-ui"
 import GatsbyImage from "../GatsbyImage"
 
 const ProjectItem = ({ project }) => {
   const {
     title,
-    content,
     projectFields: { projectUrl },
     featuredImage,
     id,
@@ -36,9 +33,7 @@ const ProjectItem = ({ project }) => {
       >
         <GatsbyImage img={featuredImage} />
         <Box>
-          <Styled.h4 sx={{ textAlign: `center`, mb: `10px` }}>
-            {title}
-          </Styled.h4>
+          <h4 sx={{ textAlign: `center`, mb: `10px` }}>{title}</h4>
           <Flex sx={{ justifyContent: `center`, mb: 6, mt: 4 }}>
             <a
               sx={{ variant: `buttons.primary` }}

@@ -1,9 +1,12 @@
 export default {
   variant: `gradients.primary`,
   textAlign: `center`,
-  py: 5,
+
   color: `white`,
   fontSize: 2,
+  ".container": {
+    py: 55,
+  },
 
   a: {
     color: `white`,

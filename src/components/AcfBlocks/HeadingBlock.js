@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Heading } from "@theme-ui/components"
+import { jsx, Heading } from "theme-ui"
 import { graphql } from "gatsby"
 
 export const fragment = graphql`

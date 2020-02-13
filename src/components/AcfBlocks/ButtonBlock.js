@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Button, Flex, Box } from "@theme-ui/components"
+import { jsx, Button, Flex, Box } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import config from "../../../config"
 

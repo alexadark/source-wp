@@ -97,6 +97,7 @@ export const h6 = {
 export const base = {
   fontSize: [1, 2],
   color: `text`,
+  fontFamily: "body",
   a,
   p,
   h1,

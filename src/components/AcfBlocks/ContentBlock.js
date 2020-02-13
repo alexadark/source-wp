@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
+import { jsx, Box } from "theme-ui"
 import { graphql } from "gatsby"
 
 export const fragment = graphql`
@@ -9,7 +9,7 @@ export const fragment = graphql`
 `
 
 export const ContentBlock = ({ content }) => (
-  <Styled.root
+  <Box
     dangerouslySetInnerHTML={{ __html: content }}
     sx={{
       maxWidth: `l`,

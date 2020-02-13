@@ -4,8 +4,9 @@ import menus from "./menus"
 import text from "./text"
 import card from "./card"
 import gradients from "./gradients"
-import Header from "./header"
-import Footer from "./footer"
+import header from "./header"
+import footer from "./footer"
+import main from "./main"
 import { fonts, fontSizes, fontWeights, lineHeights, base } from "./typo"
 
 export default {
@@ -19,6 +20,9 @@ export default {
   buttons,
   menus,
   card,
+  header,
+  footer,
+  main,
   sizes: {
     container: 1024,
     s: 300,
@@ -37,43 +41,17 @@ export default {
   radii: {
     xl: `1rem`,
   },
+  layout: {
+    backgroundColor: "background",
+    color: "text",
+    fontFamily: "body",
+    fontSize: 1,
+    lineHeight: "text",
+    container: {
+      px: [20, 30, 0],
+    },
+  },
   styles: {
-    Layout: {
-      backgroundColor: "background",
-      color: "text",
-      fontFamily: "body",
-      fontSize: 1,
-      lineHeight: "text",
-    },
-    Header,
-    Footer,
-    Main: {
-      margin: "0 auto",
-      maxWidth: "container",
-      width: "90vw",
-      py: 10,
-    },
-    Container: {
-      maxWidth: `l`,
-      m: `0 auto`,
-    },
-    ...base,
-
     root: base,
-  },
-
-  //grommet
-  accordion: {
-    heading: {
-      level: 2,
-    },
-  },
-  layer: {
-    extend: {
-      // position: `absolute`,
-    },
-  },
-  global: {
-    colors,
   },
 }

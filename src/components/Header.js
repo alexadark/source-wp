@@ -1,13 +1,5 @@
 /** @jsx jsx */
-import {
-  jsx,
-  Container,
-  Header as StyledHeader,
-  Box,
-  Flex,
-  Styled,
-} from "theme-ui"
-import React from "react"
+import { jsx, Container } from "theme-ui"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Menu from "./Menu"
 import Headroom from "react-headroom"
@@ -28,7 +20,7 @@ const Header = () => {
 
   return (
     <Headroom>
-      <StyledHeader>
+      <header sx={{ variant: "header" }}>
         <Container>
           <h1 sx={{ variant: `text.branding` }}>
             <Link to="/" rel="home">
@@ -37,7 +29,7 @@ const Header = () => {
           </h1>
           <Menu />
         </Container>
-      </StyledHeader>
+      </header>
     </Headroom>
   )
 }
