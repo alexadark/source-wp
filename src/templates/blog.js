@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled, Container, Box, Flex } from "theme-ui"
+import { jsx, Container, Box, Flex } from "theme-ui"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import Pagination from "../components/Pagination"
@@ -21,14 +21,14 @@ const Blog = ({ data, pageContext }) => {
                 </Box>
               </Link>
               <Box sx={{ variant: `card.default`, mb: 8 }}>
-                <Styled.h2>
+                <h2>
                   <Link
                     to={`/posts/${post.uri}`}
                     dangerouslySetInnerHTML={{ __html: post.title }}
                     sx={{ color: `text`, "&:hover": { color: `primary` } }}
                   />
-                </Styled.h2>
-                <Styled.root
+                </h2>
+                <Box
                   className="content"
                   dangerouslySetInnerHTML={{ __html: post.excerpt }}
                 />

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
+import { jsx, Box } from "theme-ui"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 
@@ -21,7 +21,7 @@ const Page = ({ data }) => {
   return (
     <Layout>
       {content && (
-        <Styled.root
+        <Box
           className="content"
           dangerouslySetInnerHTML={{ __html: content }}
           sx={{ variant: `card.default` }}
